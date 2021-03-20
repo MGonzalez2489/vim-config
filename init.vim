@@ -11,28 +11,22 @@ set sw=2
 set relativenumber
 set laststatus=2
 
-"Syntastic syntax highlighting
-set statusline+=%warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi']
-
 call plug#begin('~/.vim/plugged')
 "Temas
 Plug 'morhetz/gruvbox'
 "IDE
-Plug 'easymotion/vim-easymotion'
-Plug 'scrooloose/nerdtree'
+Plug 'easymotion/vim-easymotion' "theme
+Plug 'scrooloose/nerdtree' "File sidebar
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "File searcher
+Plug 'junegunn/fzf.vim' "File searcher
+Plug 'ryanoasis/vim-devicons' "dev icons
+Plug 'pangloss/vim-javascript' "enable js syntax
+Plug 'leafgarland/typescript-vim' "Ts syntax support
+Plug 'Quramy/tsuquyomi' "enable IDE features
+Plug 'Valloric/YouCompleteMe' "enable autocomplete
+Plug 'vim-syntastic/syntastic' "Syntax checking
 
-Plug 'https://github.com/leafgarland/typescript-vim'
-Plug 'https://github.com/pangloss/vim-javascript'
-Plug 'https://github.com/bdauria/angular-cli.vim'
-Plug 'https://github.com/Quramy/tsuquyomi'
-Plug 'https://github.com/vim-syntastic/syntastic'
 
 call plug#end()
 colorscheme gruvbox
@@ -50,10 +44,18 @@ nmap <Leader>p :NERDTreeFind<CR>
 nmap <Leader>w :w<CR>
 "quit
 nmap <Leader>q :q<CR>
-"
+"Find in files
+nmap <Leader>f :Files<CR>
+"enable ts the plugin to display compilation errors in the QuickFix window
 let g:typescript_compiler_binary = 'tsc'
 let g:typescript_compiler_options = ''
-
-
-
-"esta es una modificacion
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+"
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] 
