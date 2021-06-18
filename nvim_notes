@@ -11,4 +11,43 @@
   
  
   
-  
+> navigate through files
+
+  g+d : go to definition
+  g+f : go to file
+  ctrl+o: go to prev path in opened files
+  ctrl+i: go to next path in opened files
+
+
+> delete commands
+
+  d+w: delete word to the right
+  u: undo
+  ctrl+r: redo
+  d+$: delete complete line
+  d(x2): cut line
+  p: paste line
+
+> jump to line
+
+  g+g: go to start of the file
+  (n)+G: go to line (n)
+  F: go to the end of the file
+  /: search in all lines next to the cursor position
+  ?: search in all lines prev to the cursor position
+
+======================PATH===============================
+
+windows: "init.vim" path: "~/appData/local/nvim/"
+ubuntu:  "init.vim" path: "~/.config/nvim/"
+
+===================start env=====================
+
+> Ubuntu
+
+1.- INSTALL: follow next instructions https://github.com/neovim/neovim/wiki/Installing-Neovim#ubuntu
+2.- go to ubuntu init.vim path (if doesn't exist, create it)
+3.- clone vim repo
+4.- install globally: https://github.com/junegunn/vim-plug#unix-linux
+5.- type ":PluggInstall" and be sure of all packages are installed
+
