@@ -18,10 +18,12 @@ Plug 'morhetz/gruvbox'
 Plug 'easymotion/vim-easymotion' "theme
 Plug 'scrooloose/nerdtree' "File sidebar
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } "File searcher
 Plug 'junegunn/fzf.vim' "File searcher
-Plug 'ryanoasis/vim-devicons' "dev icons
 Plug 'pangloss/vim-javascript' "enable js syntax
+Plug 'ryanoasis/vim-devicons' "icons
 Plug 'leafgarland/typescript-vim' "Ts syntax support
 Plug 'Quramy/tsuquyomi' "enable IDE features
 Plug 'Valloric/YouCompleteMe' "enable autocomplete
@@ -76,3 +78,4 @@ let $FZF_DEFAULT_OPTS="--preview-window 'right:57%' --preview 'bat --style=numbe
 \shift-up:preview-top,shift-down:preview-bottom,
 \alt-up:half-page-up,alt-down:half-page-down"
 
+set encoding=UTF-8
