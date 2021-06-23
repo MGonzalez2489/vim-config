@@ -1,15 +1,18 @@
-set number
-set mouse=a
-set numberwidth=1
-set clipboard=unnamed
-syntax enable
-set showcmd
-set ruler
-set encoding=utf-8
-set showmatch
-set sw=2
-set relativenumber
-set laststatus=2
+set number               " Display line numbers
+set mouse+=a 		 " Enable mouse for scrolling and resizing
+set numberwidth=1	 " change the width of the "gutter" column used for numbering
+set clipboard=unnamed    " share vim clipboard with system clipboard
+syntax enable            " highlight vim sintax
+set showcmd              " show current commands
+set ruler                " show current position (row and column)
+set encoding=utf-8       " 
+set showmatch            " highlight end of brakets
+set sw=2                 " ident lines with 2 spaces instead of tabs
+set relativenumber       " cursor will be always in line 1
+set laststatus=2         " status bar always visible
+"set noshowmode           " hide current mode label
+
+"== vim-plug to manage all used plugins
 
 call plug#begin('~/.vim/plugged')
 "Temas
@@ -43,7 +46,7 @@ colorscheme gruvbox
 "set hard theme contrast
 let g:gruvbox_contrast_dark = "hard"
 "close NERDTree on open file
-let NERDTreeQuitOnOpen=1
+"let NERDTreeQuitOnOpen=1
 let g:NERDTreeWinSize=30
 "set leader key to space
 let mapleader=" "
@@ -52,7 +55,7 @@ nmap <Leader>s <Plug>(easymotion-s2)
 "execute NerdTreeFind
 nmap <Leader>p :NERDTreeFind<CR>
 "save
-:nnoremap <C-S> :w!<CR>
+nnoremap <C-S> :w!<CR>
 "quit
 nmap <Leader>q :wq<CR>
 "Find in files
@@ -77,5 +80,3 @@ let $FZF_DEFAULT_OPTS="--preview-window 'right:57%' --preview 'bat --style=numbe
 \ctrl-b:preview-page-up,ctrl-f:preview-page-down,
 \shift-up:preview-top,shift-down:preview-bottom,
 \alt-up:half-page-up,alt-down:half-page-down"
-
-set encoding=UTF-8
