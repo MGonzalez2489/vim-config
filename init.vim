@@ -12,6 +12,10 @@ set relativenumber       " cursor will be always in line 1
 set laststatus=2         " status bar always visible
 "set noshowmode           " hide current mode label
 
+:set autoindent
+
+
+
 "== vim-plug to manage all used plugins
 
 call plug#begin('~/.vim/plugged')
@@ -39,7 +43,7 @@ Plug 'https://github.com/jiangmiao/auto-pairs'
 " Angular CLI plugin
 " Use :Ng command in Vim
 Plug 'https://github.com/bdauria/angular-cli.vim'
-
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 colorscheme gruvbox
