@@ -44,6 +44,7 @@ Plug 'https://github.com/jiangmiao/auto-pairs'
 " Use :Ng command in Vim
 Plug 'https://github.com/bdauria/angular-cli.vim'
 Plug 'mattn/emmet-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 colorscheme gruvbox
