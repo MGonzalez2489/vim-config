@@ -1,3 +1,4 @@
+
 function! SetupCommandAbbrs(from, to)
   exec 'cnoreabbrev <expr> '.a:from
         \ .' ((getcmdtype() ==# ":" && getcmdline() ==# "'.a:from.'")'
@@ -5,14 +6,10 @@ function! SetupCommandAbbrs(from, to)
 endfunction
 
 " Use C to open coc config
-
 call SetupCommandAbbrs('HTML', 'CocConfig')
 call SetupCommandAbbrs('javascript', 'CocConfig')
 call SetupCommandAbbrs('Typescript', 'CocConfig')
 call SetupCommandAbbrs('CSS', 'CocConfig')
-
 "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "HTML", "javascript", "Typescript"],
 "tsserver.formatOnType":true,
 "coc.preferences.formatOnType": true,
-
-
