@@ -10,8 +10,8 @@ set showmatch
 set sw=2
 set relativenumber
 set laststatus=2
-set noshowmode
-
+"set noshowmode
+set autoindent
 call plug#begin('~/AppData/Local/nvim/plugged')
 
 " Theme
@@ -21,7 +21,6 @@ Plug 'morhetz/gruvbox'
 "" Easymotion
 Plug 'easymotion/vim-easymotion'
 "" Nerdtree
-
 Plug 'scrooloose/nerdtree'
 "" To navigate throgut open files
 Plug 'christoomey/vim-tmux-navigator'
@@ -38,9 +37,20 @@ Plug 'leafgarland/typescript-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Autoclose
 Plug 'townk/vim-autoclose'
+Plug 'alvan/vim-closetag'
 
 "Angular CLI and support
 Plug 'https://github.com/bdauria/angular-cli.vim'
+
+" status bar
+Plug 'maximbaz/lightline-ale'
+Plug 'itchyny/lightline.vim'
+
+Plug 'yggdroot/indentline'
+Plug 'scrooloose/nerdcommenter'
+
+
+
 call plug#end()
 
 colorscheme gruvbox
@@ -57,12 +67,12 @@ autocmd QuickFixCmdPost    l* nested lwindow
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
 
-"inoremap <silent><expr> <TAB>
- "     \ pumvisible() ? "\<C-n>" :
-  "    \ <SID>check_back_space() ? "\<TAB>" :
-   "
-	 "\ coc#refresh()
-"inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+   
+	"\ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 " Use <c-space> to trigger completion.
 if has('nvim')
@@ -94,5 +104,13 @@ let $FZF_DEFAULT_OPTS="--preview-window 'right:57%' --preview 'bat --style=numbe
 \ctrl-b:preview-page-up,ctrl-f:preview-page-down,
 \shift-up:preview-top,shift-down:preview-bottom,
 \alt-up:half-page-up,alt-down:half-page-down"
+"
+let $FZF_PREVIEW_PREVIEW_BAT_THEME='gruvbox-dark'
 
+let $FZF_DEFAULT_COMMAND = 'rg --files --ignore-case --hidden -g "!{.git,node_modules,vendor}/*"'
+command! -bang -nargs=? -complete=dir Files
+     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
+let g:fzf_preview_use_dev_icons = 1
+
+"choco install ripgrep
