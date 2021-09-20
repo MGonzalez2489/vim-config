@@ -49,7 +49,12 @@ Plug 'itchyny/lightline.vim'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 
+" Prettier
 
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 call plug#end()
 
