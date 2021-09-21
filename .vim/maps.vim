@@ -16,4 +16,18 @@ let mapleader=" "
   nmap <Leader>w :w<CR>
   ""quit file
   nmap <Leader>q :q<CR>
+
+
+
+"prettier
+nmap <Leader>kc <Plug>(Prettier)
  
+
+  " Use <c-space> to trigger completion.
+   if has('nvim')
+     inoremap <silent><expr> <c-space> coc#refresh()
+     else
+       inoremap <silent><expr> <c-@> coc#refresh()
+       endif
+  
+       

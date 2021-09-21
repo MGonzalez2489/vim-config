@@ -11,3 +11,23 @@ let NERDTreeMapOpenInTab='\t'
 "Prettier
 
 let g:prettier#config#print_width = '130'
+
+
+" fzf
+
+let $FZF_DEFAULT_OPTS="--preview-window 'right:57%' --preview 'bat --style=numbers --color=always --line-range :500 {}'
+      \ --bind ctrl-u:preview-up,ctrl-d:preview-down,
+      \ctrl-b:preview-page-up,ctrl-f:preview-page-down,
+      \shift-up:preview-top,shift-down:preview-bottom,
+      \alt-up:half-page-up,alt-down:half-page-down"
+"
+"let $FZF_PREVIEW_PREVIEW_BAT_THEME='gruvbox-dark'
+"
+"let $FZF_DEFAULT_COMMAND = 'rg --files --ignore-case --hidden -g
+""!{.git,node_modules,vendor}/*"'
+command! -bang -nargs=? -complete=dir Files
+     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
+
+let g:fzf_preview_use_dev_icons = 1
+
+"
