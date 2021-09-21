@@ -8,3 +8,6 @@ let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
 
+"Prettier
+
+let g:prettier#config#print_width = '130'

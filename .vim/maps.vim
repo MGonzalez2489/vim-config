@@ -17,4 +17,3 @@ let mapleader=" "
   ""quit file
   nmap <Leader>q :q<CR>
  
-  
