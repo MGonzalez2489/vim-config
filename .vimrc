@@ -10,7 +10,6 @@ set showmatch
 set sw=2
 set relativenumber
 set laststatus=2
-"set noshowmode
 set autoindent
 
 so  ~/AppData/Local/nvim/.vim/maps.vim
@@ -24,4 +23,5 @@ let g:typescript_compiler_options = ''
 let g:python3_host_prog = 'C:\Users\manuel.gonzalez\AppData\Local\Programs\Python\Python39\python'
 autocmd QuickFixCmdPost [^l]* nested cwindow
 autocmd QuickFixCmdPost    l* nested lwindow
+
 "choco install ripgrep

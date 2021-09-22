@@ -7,6 +7,7 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
+highlight! link NERDTreeFlags NERDTreeDir
 
 "Prettier
 
@@ -21,7 +22,7 @@ let $FZF_DEFAULT_OPTS="--preview-window 'right:57%' --preview 'bat --style=numbe
       \shift-up:preview-top,shift-down:preview-bottom,
       \alt-up:half-page-up,alt-down:half-page-down"
 "
-"let $FZF_PREVIEW_PREVIEW_BAT_THEME='gruvbox-dark'
+let $FZF_PREVIEW_PREVIEW_BAT_THEME='gruvbox'
 "
 "let $FZF_DEFAULT_COMMAND = 'rg --files --ignore-case --hidden -g
 ""!{.git,node_modules,vendor}/*"'
