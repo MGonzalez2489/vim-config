@@ -35,6 +35,9 @@ Plug 'itchyny/lightline.vim'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 
+" css hex colors
+Plug 'https://github.com/ap/vim-css-color'
+
 " Prettier
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {
