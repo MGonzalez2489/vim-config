@@ -24,11 +24,9 @@ let $FZF_DEFAULT_OPTS="--preview-window 'right:57%' --preview 'bat --style=numbe
 "
 let $FZF_PREVIEW_PREVIEW_BAT_THEME='gruvbox'
 "
-"let $FZF_DEFAULT_COMMAND = 'rg --files --ignore-case --hidden -g
-""!{.git,node_modules,vendor}/*"'
+let $FZF_DEFAULT_COMMAND = 'rg --files --ignore-case --hidden -g"!{.git,node_modules,vendor}/*"'
 command! -bang -nargs=? -complete=dir Files
      \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
 let g:fzf_preview_use_dev_icons = 1
 
-"
