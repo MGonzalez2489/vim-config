@@ -1,4 +1,4 @@
-call plug#begin('~/AppData/Local/nvim/.vim/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Theme
 Plug 'morhetz/gruvbox'
@@ -45,5 +45,11 @@ Plug 'prettier/vim-prettier', {
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 Plug 'tpope/vim-fugitive'
+
+" Track the engine.
+Plug 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
 
 call plug#end()

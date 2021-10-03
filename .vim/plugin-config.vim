@@ -30,3 +30,9 @@ command! -bang -nargs=? -complete=dir Files
 
 let g:fzf_preview_use_dev_icons = 1
 
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
