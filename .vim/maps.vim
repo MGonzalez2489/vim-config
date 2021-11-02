@@ -10,6 +10,9 @@ let mapleader=" "
   nmap <Leader>f : NERDTreeFind<CR>
  " "to find files in folder
   nmap <C-p> :Files<CR>
+
+" To find word in files
+  nmap <C-f> :Rg<CR>
  
  " "shortcuts
   ""save file
