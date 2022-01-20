@@ -51,3 +51,12 @@ ubuntu:  "init.vim" path: "~/.config/nvim/"
 4.- install globally: https://github.com/junegunn/vim-plug#unix-linux
 5.- type ":PluggInstall" and be sure of all packages are installed
 
+
+
+> Required languaje server
+
+- bash : CocInstall coc-sh
+- css/less/sass : CocInstall coc-css
+- flutter : CocInstall coc-flutter
+- html : CocInstall coc-html
+- ts : CocInstall coc-tsserver
