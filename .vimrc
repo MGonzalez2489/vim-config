@@ -11,6 +11,8 @@ set sw=2
 set relativenumber
 set laststatus=2
 set autoindent
+set foldcolumn=1
+set foldmethod=syntax
 
 so  ~/.vim/maps.vim
 so  ~/.vim/plugins.vim
