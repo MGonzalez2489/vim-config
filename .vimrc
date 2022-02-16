@@ -13,6 +13,7 @@ set laststatus=2
 set autoindent
 set foldcolumn=1
 set foldmethod=syntax
+set foldlevel=99
 
 so  ~/.vim/maps.vim
 so  ~/.vim/plugins.vim

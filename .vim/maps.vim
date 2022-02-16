@@ -25,6 +25,14 @@ let mapleader=" "
   nmap <silent> gi <Plug>(coc-implementation)
   nmap <silent> gr <Plug>(coc-references)
 
+  " faster scrolling
+nnoremap <C-j> 10<C-e>
+nnoremap <C-k> 10<C-y>
+nmap <Leader>s <Plug>(easymotion-s2)
+
+
+  nnoremap <Leader>. 10<C-w><
+nnoremap <Leader>, 10<C-w>>
 
 
 "prettier

@@ -25,9 +25,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'townk/vim-autoclose'
 Plug 'alvan/vim-closetag'
 
-"Angular CLI and support
+"Angular
 Plug 'https://github.com/bdauria/angular-cli.vim'
 
+"ReactJS
+Plug 'jelera/vim-javascript-syntax'
+Plug 'mxw/vim-jsx'
+Plug 'dense-analysis/ale' "lint
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
