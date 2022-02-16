@@ -46,7 +46,7 @@ let g:coc_global_extensions = [
 
 "Prettier
 
-let g:prettier#config#print_width = '130'
+"let g:prettier#config#print_width = '80'
 
 
 " fzf
