@@ -1,6 +1,33 @@
 #html
+
+snippet html "HTML basic structure" i
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>${1:`!p snip.rv = snip.basename.replace('-', ' ').capitalize()`}</title>
+	</head>
+	<body>
+		${0:body}
+	</body>
+</html>
+endsnippet
+
 snippet btn "Html button" i
 	<button class="$2" id="$3">$1</button>
+endsnippet
+
+snippet div "Html div" i
+<div>$1</div>
+endsnippet
+
+snippet divc "html div with class" i
+<div class="$1">$2</div>
+endsnippet
+
+snippet a "Link" w
+<a href="${1:http://www.${2:url.com}}"${3: target="_blank"}>${4:Anchor Text}</a>
 endsnippet
 
 #Angular
