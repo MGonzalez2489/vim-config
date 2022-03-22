@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 " Theme
 Plug 'morhetz/gruvbox'
-
 " IDE
 "" Easymotion
 Plug 'easymotion/vim-easymotion'
@@ -24,14 +23,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Autoclose
 Plug 'townk/vim-autoclose'
 Plug 'alvan/vim-closetag'
-
-"Angular
-Plug 'https://github.com/bdauria/angular-cli.vim'
-
-"ReactJS
-Plug 'jelera/vim-javascript-syntax'
-Plug 'mxw/vim-jsx'
-Plug 'dense-analysis/ale' "lint
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
@@ -39,14 +30,15 @@ Plug 'itchyny/lightline.vim'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 
-" css hex colors
-Plug 'https://github.com/ap/vim-css-color'
-
 " Prettier
 " post install (yarn install | npm install) then load plugin only for editing supported files
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+
+
+" css hex colors
+Plug 'https://github.com/ap/vim-css-color'
 
 Plug 'tpope/vim-fugitive'
 
@@ -54,3 +46,4 @@ Plug 'tpope/vim-fugitive'
 Plug 'SirVer/ultisnips'
 
 call plug#end()
+
