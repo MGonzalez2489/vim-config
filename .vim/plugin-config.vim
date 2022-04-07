@@ -1,3 +1,8 @@
+" HTML, JSX
+let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
+
+
+
 "NeerdTree
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=0
@@ -8,6 +13,9 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
 highlight! link NERDTreeFlags NERDTreeDir
 
+
+" Prettier
+let g:prettier#config#print_width = '120'
 
 
 " fzf
@@ -33,4 +41,5 @@ let g:UltiSnipsListSnippets="<c-l>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
 

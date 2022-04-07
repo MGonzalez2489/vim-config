@@ -27,6 +27,9 @@ Plug 'alvan/vim-closetag'
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 
+"Editor
+Plug 'editorconfig/editorconfig-vim'
+Plug 'mhinz/vim-signify'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 
@@ -44,6 +47,8 @@ Plug 'tpope/vim-fugitive'
 
 " Track the engine.
 Plug 'SirVer/ultisnips'
+
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 

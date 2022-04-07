@@ -22,13 +22,14 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-
-"faster scrolling
-nnoremap <C-j> 10<C-e>
-nnoremap <C-k> 10<C-y>
+" faster scrolling
+"nnoremap <C-j> 10<C-e>
+nnoremap <S-j> 10<C-e>
+nnoremap <S-k> 10<C-y>
+"Easy Motion
 nmap <Leader>s <Plug>(easymotion-s2)
 
-  nnoremap <Leader>. 10<C-w><
+nnoremap <Leader>. 10<C-w><
 nnoremap <Leader>, 10<C-w>>
 
 
@@ -41,4 +42,9 @@ if has('nvim')
 else
    inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
+" tabs navigation
+map <Leader>h :tabprevious<cr>
+map <Leader>l :tabnext<cr>
+
 

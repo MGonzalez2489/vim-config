@@ -14,7 +14,6 @@ set sw=2
 set relativenumber
 set laststatus=2
 set autoindent
-set foldmethod=syntax
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
