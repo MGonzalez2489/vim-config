@@ -15,7 +15,8 @@ highlight! link NERDTreeFlags NERDTreeDir
 
 
 " Prettier
-let g:prettier#config#print_width = '120'
+"let g:prettier#config#print_width = '120'
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 
 " fzf

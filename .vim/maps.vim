@@ -34,7 +34,8 @@ nnoremap <Leader>, 10<C-w>>
 
 
 "prettier
-nmap <Leader>kc <Plug>(Prettier)
+"nmap <Leader>kc <Plug>(Prettier)
+nnoremap <Leader>kc :Prettier<CR>
 
 " Use <c-space> to trigger completion.
 if has('nvim')
