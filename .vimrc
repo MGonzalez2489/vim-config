@@ -6,7 +6,6 @@ set clipboard=unnamedplus
 syntax on
 set showcmd "command is used to show the commands which you enter in the file.
 set ruler "the ruler is displayed on the right side of the status line at the bottom of the window
-
 set encoding=UTF-8
 set showmatch
 set matchtime=3

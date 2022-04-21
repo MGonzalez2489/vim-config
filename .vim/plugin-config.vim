@@ -1,8 +1,6 @@
 " HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 
-
-
 "NeerdTree
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=0
@@ -13,14 +11,10 @@ let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
 highlight! link NERDTreeFlags NERDTreeDir
 
-
 " Prettier
-"let g:prettier#config#print_width = '120'
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
-
 " fzf
-
 let $FZF_DEFAULT_OPTS="--preview-window 'right:57%' --preview 'bat --style=numbers --color=always --line-range :500 {}'
       \ --bind ctrl-u:preview-up,ctrl-d:preview-down,
       \ctrl-b:preview-page-up,ctrl-f:preview-page-down,

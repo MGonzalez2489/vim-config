@@ -15,7 +15,6 @@ nmap <Leader>w :w<CR>
 "quit file
 nmap <Leader>q :q<CR>
 
-
 "go to definition
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
