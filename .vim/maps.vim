@@ -23,14 +23,13 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " faster scrolling
-"nnoremap <C-j> 10<C-e>
 nnoremap <S-j> 10<C-e>
 nnoremap <S-k> 10<C-y>
 "Easy Motion
 nmap <Leader>s <Plug>(easymotion-s2)
 
-nnoremap <Leader>. 10<C-w><
-nnoremap <Leader>, 10<C-w>>
+nnoremap <S-Left> 10<C-w>>
+nnoremap <S-Right> 10<C-w><
 
 
 "prettier
