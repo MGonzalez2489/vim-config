@@ -29,6 +29,9 @@ nmap <Leader>s <Plug>(easymotion-s2)
 
 nnoremap <S-Left> 10<C-w>>
 nnoremap <S-Right> 10<C-w><
+nnoremap <S-Up> 10<C-w>+
+nnoremap <S-Down> 10<C-w>-
+
 
 
 "prettier
