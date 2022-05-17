@@ -50,5 +50,7 @@ Plug 'SirVer/ultisnips'
 
 Plug 'mattn/emmet-vim'
 
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
 call plug#end()
 
