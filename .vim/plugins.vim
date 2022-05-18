@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 " syntax
-Plug 'vim-polyglot' 
+Plug 'sheerun/vim-polyglot'
 Plug 'norcalli/nvim-colorizer.lua'
 
 " status bar
@@ -37,54 +37,7 @@ Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 
 " git
-Plug 'tpope/vim-fugitive'
-
-" --------
-
-"" IDE
-""" Easymotion
-"Plug 'easymotion/vim-easymotion'
-""" File searcher
-"Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
-"Plug 'junegunn/fzf.vim' 
-""" Enable js syntax
-"Plug 'pangloss/vim-javascript'
-""" Icons
-"Plug 'ryanoasis/vim-devicons'
-"" typescript support
-"Plug 'leafgarland/typescript-vim'
-""coc 
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
-""Autoclose
-"Plug 'townk/vim-autoclose'
-"Plug 'alvan/vim-closetag'
-"" status bar
-"Plug 'maximbaz/lightline-ale'
-"Plug 'itchyny/lightline.vim'
-
-""Editor
-"Plug 'editorconfig/editorconfig-vim'
-"Plug 'mhinz/vim-signify'
-"Plug 'yggdroot/indentline'
-"Plug 'scrooloose/nerdcommenter'
-
-"" Prettier
-"" post install (yarn install | npm install) then load plugin only for editing supported files
-"Plug 'prettier/vim-prettier', {
-  "\ 'do': 'yarn install',
-  "\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
-
-
-"" css hex colors
-"Plug 'https://github.com/ap/vim-css-color'
-
 "Plug 'tpope/vim-fugitive'
-
-"" Track the engine.
-"Plug 'SirVer/ultisnips'
-
-"Plug 'mattn/emmet-vim'
-
 
 call plug#end()
 
