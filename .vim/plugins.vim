@@ -14,6 +14,8 @@ Plug 'morhetz/gruvbox'
 " Tree
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'
+
 
 " typing
 Plug 'alvan/vim-closetag'
