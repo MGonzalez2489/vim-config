@@ -14,6 +14,8 @@ set relativenumber
 set laststatus=2
 set autoindent
 
+set splitbelow
+
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim

@@ -29,9 +29,12 @@ nmap <Leader>s <Plug>(easymotion-s2)
 
 nnoremap <S-Left> 10<C-w>>
 nnoremap <S-Right> 10<C-w><
-nnoremap <S-Up> 10<C-w>+
-nnoremap <S-Down> 10<C-w>-
+nnoremap <S-Up> 2<C-w>+
+nnoremap <S-Down> 2<C-w>-
 
+" Add these values to terminal profile to use <S-Up> and <S-Down>
+"\033[1;2A
+"\033[1;2B
 
 
 "prettier
@@ -65,7 +68,7 @@ function! OpenTerminal()
     execute "q"
   else
     " open terminal
-    execute "vsp term://zsh"
+    execute "sp term://zsh"
 
     " turn off numbers
     execute "set nonu"
@@ -77,6 +80,9 @@ function! OpenTerminal()
 
     " set maps inside terminal buffer
     execute "tnoremap <buffer> <C-h> <C-\\><C-n><C-w><C-h>"
+    execute "tnoremap <buffer> <C-k> <C-\\><C-n><C-w><C-k>"
+    execute "tnoremap <buffer> <S-Up> <C-\\><C-n><C-w><S-Up>"
+    execute "tnoremap <buffer> <S-Down> <C-\\><C-n><C-w><S-Down>"
     execute "tnoremap <buffer> <C-t> <C-\\><C-n>:q<CR>"
     execute "tnoremap <buffer> <C-\\><C-\\> <C-\\><C-n>"
 
