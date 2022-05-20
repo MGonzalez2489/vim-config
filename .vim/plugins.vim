@@ -5,8 +5,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'norcalli/nvim-colorizer.lua'
 
 " status bar
-Plug 'maximbaz/lightline-ale'
+Plug 'dense-analysis/ale'
 Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
 
 " theme
 Plug 'morhetz/gruvbox'
@@ -22,7 +23,8 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
 " tmux
-Plug 'benmills/vimux'
+"Plug 'benmills/vimux'
+Plug 'preservim/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 
 " autocomplete
@@ -40,6 +42,7 @@ Plug 'scrooloose/nerdcommenter'
 
 " git
 "Plug 'tpope/vim-fugitive'
+Plug 'fgr1986/vim-fugitive'
 
 call plug#end()
 
