@@ -14,6 +14,8 @@ set relativenumber
 set laststatus=2
 set autoindent
 set splitbelow
+set foldmethod=syntax
+set foldlevel=99
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
