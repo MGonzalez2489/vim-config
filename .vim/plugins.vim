@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 " syntax
 Plug 'sheerun/vim-polyglot'
-Plug 'norcalli/nvim-colorizer.lua'
 
 " status bar
 Plug 'dense-analysis/ale'
@@ -41,8 +40,9 @@ Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 
 " git
-"Plug 'tpope/vim-fugitive'
 Plug 'fgr1986/vim-fugitive'
 
+"css
+Plug 'ap/vim-css-color'
 call plug#end()
 

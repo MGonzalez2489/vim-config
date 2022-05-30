@@ -13,7 +13,6 @@ set sw=2
 set relativenumber
 set laststatus=2
 set autoindent
-
 set splitbelow
 
 so ~/.vim/plugins.vim

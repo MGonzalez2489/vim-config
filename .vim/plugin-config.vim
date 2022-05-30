@@ -1,5 +1,7 @@
 " HTML, JSX
-let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
+"let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
+
+let g:closetag_filenames = '*.html,*.js,*.jsx,*.tsx'
 " Lightlane
 let g:lightline = {
       \ 'active': {
@@ -27,7 +29,7 @@ let g:lightline = {
 
 "NeerdTree
 let NERDTreeShowHidden=1
-let NERDTreeQuitOnOpen=1
+let NERDTreeQuitOnOpen=0
 let NERDTreeAutoDeleteBuffer=1
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
