@@ -16,13 +16,17 @@ set autoindent
 set splitbelow
 set foldmethod=syntax
 set foldlevel=99
+set wildignore+=*/node_modules/*
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
+so ~/.vim/colors/NeoSolarized.vim
 
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
+
+colorscheme NeoSolarized
+
+
 let g:typescript_compiler_binary = 'tsc'
 let g:typescript_compiler_options = ''
 autocmd QuickFixCmdPost [^l]* nested cwindow

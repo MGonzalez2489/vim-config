@@ -9,7 +9,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
 
 " theme
-Plug 'morhetz/gruvbox'
+"Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 
 " Tree
 Plug 'scrooloose/nerdtree'

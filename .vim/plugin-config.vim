@@ -35,6 +35,7 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
+let g:NERDTreeIgnore=['^node_modules$']
 highlight! link NERDTreeFlags NERDTreeDir
 
 " Prettier
@@ -62,5 +63,3 @@ let g:UltiSnipsListSnippets="<c-l>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
-
-

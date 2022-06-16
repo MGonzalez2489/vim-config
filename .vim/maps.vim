@@ -26,6 +26,8 @@ nnoremap <S-j> 10<C-e>
 nnoremap <S-k> 10<C-y>
 "Easy Motion
 nmap <Leader>s <Plug>(easymotion-s2)
+nmap <C-n> <Plug>(easymotion-next)
+nmap <C-l> <Plug>(easymotion-prev)
 
 nnoremap <S-Left> 10<C-w>>
 nnoremap <S-Right> 10<C-w><
