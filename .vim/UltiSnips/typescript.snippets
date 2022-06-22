@@ -3,11 +3,18 @@ import { $2 } from '$1';
 endsnippet
 
 snippet clg "console.log()" b
-console.log(${1:$2, $3})
+console.log(${1:$2, $3});
 endsnippet
 
 snippet aroute
-	{ path: '/${1:#:path}', component: ${2:#:Component} }${0}
+{ path: '/${1:#:path}', component: ${2:#:Component} }${0}
+endsnippet
+
+snippet alroute "lazy loading route"
+{
+  path: ${1:#:path},
+  loadChildren: () => import('${2:#:route}').then(m => m${3:#:moduleName})
+},
 endsnippet
 
 snippet exp

@@ -9,8 +9,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
 
 " theme
-"Plug 'morhetz/gruvbox'
-Plug 'arcticicestudio/nord-vim'
+Plug 'morhetz/gruvbox'
 
 " Tree
 Plug 'scrooloose/nerdtree'
@@ -23,7 +22,6 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 
 " tmux
-"Plug 'benmills/vimux'
 Plug 'preservim/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 

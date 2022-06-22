@@ -21,11 +21,9 @@ set wildignore+=*/node_modules/*
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim
 so ~/.vim/maps.vim
-so ~/.vim/colors/NeoSolarized.vim
 
-
-colorscheme NeoSolarized
-
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = "hard"
 
 let g:typescript_compiler_binary = 'tsc'
 let g:typescript_compiler_options = ''
