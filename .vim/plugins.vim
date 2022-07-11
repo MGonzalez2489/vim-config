@@ -43,5 +43,7 @@ Plug 'fgr1986/vim-fugitive'
 
 "css
 Plug 'ap/vim-css-color'
+
+Plug 'vuciv/vim-bujo'
 call plug#end()
 

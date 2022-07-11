@@ -26,3 +26,15 @@ $1($2):$3{
 $4
 }
 endsnippet
+
+
+snippet aReq "request service" b
+this${1}${2}(${3}).subscribe(
+data=>{
+${4}
+},
+error=>{
+${5}
+}
+);
+endsnippet

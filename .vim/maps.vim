@@ -1,5 +1,7 @@
 let mapleader=" "
 
+inoremap jk <ESC>
+
 "to open nerdtree
 nmap <Leader>f : NERDTreeFind<CR>
 
@@ -37,7 +39,6 @@ nnoremap <S-Down> 2<C-w>-
 " Add these values to terminal profile to use <S-Up> and <S-Down>
 "\033[1;2A
 "\033[1;2B
-
 
 "prettier
 "nmap <Leader>kc <Plug>(Prettier)
@@ -91,4 +92,4 @@ function! OpenTerminal()
     startinsert!
   endif
 endfunction
-nnoremap <C-t> :call OpenTerminal()<CR>
+"nnoremap <C-t> :call OpenTerminal()<CR>
