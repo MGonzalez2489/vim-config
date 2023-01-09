@@ -40,6 +40,7 @@ Plug 'scrooloose/nerdcommenter'
 
 " git
 Plug 'fgr1986/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 "css
 Plug 'ap/vim-css-color'

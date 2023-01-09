@@ -35,6 +35,7 @@ let NERDTreeMapOpenInTab='\t'
 let g:NERDTreeIgnore=['^node_modules$']
 highlight! link NERDTreeFlags NERDTreeDir
 
+
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 

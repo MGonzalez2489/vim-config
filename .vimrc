@@ -17,6 +17,7 @@ set splitbelow
 set foldmethod=syntax
 set foldlevel=99
 set wildignore+=*/node_modules/*
+set foldminlines=0
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugin-config.vim

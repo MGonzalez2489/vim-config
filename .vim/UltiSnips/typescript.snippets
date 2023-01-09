@@ -6,6 +6,7 @@ snippet clg "console.log()" b
 console.log(${1:$2, $3});
 endsnippet
 
+#Angular
 snippet aroute
 { path: '/${1:#:path}', component: ${2:#:Component} }${0}
 endsnippet
@@ -38,3 +39,25 @@ ${5}
 }
 );
 endsnippet
+
+snippet aReducer "NgRx reducer" b
+import {createReducer, on} from '@ngrx/store';
+import * as ${2} from '${1}'; // actions
+
+export interface ${3} {
+  key:string;
+}
+
+export const initialState: ${3} = {
+  key:'',
+}
+
+const _${4}Reducer = createReducer(initialState,
+  on(action, state=>({...state, key:''})),
+);
+
+export function ${4}Reducer(state,action){
+    return _${4}Reducer(state,action);
+}
+endsnippet
+
