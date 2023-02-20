@@ -13,7 +13,7 @@ nmap <C-f> :Rg<CR>
  
 ""shortcuts
 "save file
-nmap <Leader>w :w<CR>
+nmap <Leader>w :wa<CR>
 "quit file
 nmap <Leader>q :q<CR>
 

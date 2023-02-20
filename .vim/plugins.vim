@@ -45,6 +45,8 @@ Plug 'airblade/vim-gitgutter'
 "css
 Plug 'ap/vim-css-color'
 
-Plug 'vuciv/vim-bujo'
+Plug 'rafi/awesome-vim-colorschemes'
+Plug 'vim-airline/vim-airline'
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
