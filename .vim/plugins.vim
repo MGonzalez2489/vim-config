@@ -48,5 +48,9 @@ Plug 'ap/vim-css-color'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'tomasiser/vim-code-dark'
+
+"databases
+Plug 'https://tpope.io/vim/dadbod.git'
+Plug 'https://github.com/kristijanhusak/vim-dadbod-ui'
 call plug#end()
 

@@ -57,6 +57,8 @@ endif
 map <Leader>h :tabprevious<cr>
 map <Leader>l :tabnext<cr>
 
+map <Leader>db :DBUI<cr>
+
 set splitright
 function! OpenTerminal()
   " move to right most buffer
