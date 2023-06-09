@@ -13,8 +13,9 @@ Plug 'morhetz/gruvbox'
 
 " Tree
 Plug 'scrooloose/nerdtree'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'her/synicons.vim'
 Plug 'ryanoasis/vim-devicons'
+
 
 
 " typing
