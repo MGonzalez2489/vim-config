@@ -11,6 +11,10 @@ nmap <C-p> :Files<CR>
 " To find word in files
 nmap <C-f> :Rg<CR>
  
+" PlugInstall
+nmap <leader>pi : PlugInstall<CR>
+
+
 ""shortcuts
 "save file
 nmap <Leader>w :wa<CR>

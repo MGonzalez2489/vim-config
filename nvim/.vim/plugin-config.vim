@@ -1,5 +1,8 @@
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.tsx'
 " Lightlane
+colorscheme gruvbox
+let g:gruvbox_contrast_dark = "hard"
+
 let g:lightline = {
       \ 'active': {
       \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
