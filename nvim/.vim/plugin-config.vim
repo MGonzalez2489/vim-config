@@ -1,7 +1,9 @@
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.tsx'
 " Lightlane
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
+
+set termguicolors
+colorscheme nord
+
 
 let g:lightline = {
       \ 'active': {
@@ -20,7 +22,6 @@ let g:lightline = {
       \   'gitbranch': 'fugitive#head',
       \   'kitestatus': 'kite#statusline'
       \ },
-      \ 'colorscheme': 'gruvbox',
       \ 'subseparator': {
       \   'left': '',
       \   'right': ''
